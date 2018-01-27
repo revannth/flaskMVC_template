@@ -1,13 +1,21 @@
 #__init__.py
+from flask import Flask
+#We instantiate all the objects here
 
-#We define the initialisations of objects here
-
-from app import app
-
+app = Flask(__name__)
+app.config.from_object('config')
 
 
-if __name__ == '__main__':
-	app.run(debug=True)
+
+from app import models,views 
+
+
+#We import models and views after the initialisation to avoid circular imports
+
+
+
+
+
 
 
 	
