@@ -39,8 +39,6 @@ When projects get larger, so does the code base. If all the code base for a give
 ```
 
 Use this to structure your old flask applications that were written in a single file. To run the web application, all you have to do is while your commandline is pointing to the Application_Name directory :
+
 ``` python run.py
 ```
-
-
-
